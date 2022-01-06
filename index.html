@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Konstantin Paulus | Software Engineering</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <canvas id="main-canvas"></canvas>
+        <nav>
+            <h1>Konstantin Paulus</h1>
+            <a href="mailto: hello@konstantinpaulus.com">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Send Email
+            </a>
+        </nav>
+        <section id="main-section">
+            <div>
+                <p class="fade-in">CURRENT PROJECT</p>
+                <h4 class="slide-in-bottom">
+                    We make AI-powered investment insights accessible to everyone.
+                </h4>
+                <a
+                    class="slide-in-bottom"
+                    href="https://news.investoom.com"
+                >
+                    Take me There
+                </a>
+            </div>
+            <img src="assets/phone.png" alt="Investoom Demo Picture" class="slide-in-right">
+        </section>
+        <section id="social-section">
+            <h2 class="fade-in slide-in-left">Social Media</h2>
+            <h2 class="fade-in slide-in-right">Handles</h2>
+            <div id="card-grid">
+                <a class="card slide-in-bottom" href="https://github.com/konstantin-paulus/tiktok-backtests">
+                    <div>
+                        <h5>GitHub</h5>
+                        <p>I publish test trading strategies here</p>
+                    </div>
+                    <svg viewBox="0 0 24 24" id="github-icon" class="social-icon">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                    </svg>
+                </a>
+                <a class="card slide-in-bottom" href="https://www.linkedin.com/in/konstantin-paulus-a0259717a">
+                    <div>
+                        <h5>LinkedIn</h5>
+                        <p>Feel free to connect & DM me here</p>
+                    </div>
+                    <svg viewBox="0 0 24 24" id="linkedin-icon" class="social-icon">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+                <a class="card slide-in-bottom" href="https://www.tiktok.com/@konstantinpaulus">
+                    <div>
+                        <h5>TikTok</h5>
+                        <p>I upload regulary here</p>
+                    </div>
+                    <svg viewBox="0 0 2882 3333" id="tiktok-icon" class="social-icon">
+                        <path d="M2142 77c25 207 94 370 206 483 109 110 262 175 457 187 44 3 77 39 77 82v506c0 45-36 82-81 82-136 13-263-3-390-43-86-27-172-65-261-112v804c0 381-126 686-317 900-140 157-314 266-501 322s-386 60-574 5c-231-67-445-221-597-470C64 2664 8 2472 1 2277c-6-180 28-364 109-530 82-167 210-317 390-427 176-108 402-177 682-187 45-2 83 34 85 79v536c0 43-33 78-75 82-39 7-79 15-119 24-39 9-77 20-114 33-105 35-186 85-234 152-47 65-66 151-50 263 21 151 135 265 270 311 56 19 115 27 172 21 56-6 110-25 158-59 122-87 205-275 180-596V80c0-45 37-82 82-82h523c44 0 79 34 82 77zm89 598c-125-126-206-298-242-510h-370v1809c29 385-85 619-249 737-72 52-153 81-236 90-81 9-165-2-243-29-189-65-348-227-379-444-22-157 8-283 80-382 70-97 179-165 316-211 41-14 84-26 128-37 23-6 45-11 68-15v-378c-210 18-382 75-517 158-151 93-259 218-328 359-69 142-99 299-93 452 6 167 53 331 136 466 129 211 309 342 503 397 157 45 324 42 482-5 158-48 306-140 425-274 166-186 275-453 275-791v-945c0-14 4-29 12-42 23-39 74-52 113-28 124 74 238 131 350 166 85 27 170 40 257 40V905c-201-26-363-104-486-228z" fill-rule="nonzero"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <section id="bio-section">
+            <p>CREATED IN MUNICH WITH 🤍</p>
+        </section>
+        <footer>
+            <p>© 2022 Konstantin Paulus</p>
+            <button id="back-to-top-btn">↑ Back To Top</button>
+        </footer>
+        <script src="assets/app.js"></script>
+        <script type="module" src="assets/particles.js"></script>
+        <script type="module" src="assets/particles.config.js"></script>
+        <script src="assets/animations.js"></script>
+    </body>
+</html>
