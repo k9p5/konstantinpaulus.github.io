@@ -1,307 +1,376 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+  @font-face {
+      font-family: 'Prompt';
+      font-style: normal;
+      font-weight: 300;
+      src: local('Prompt Light'), local('Prompt-Light'), url('/fonts/Prompt-Light.ttf') format('truetype');;
+  }
 
-body {
-    background-color: black;
-}
+  @font-face {
+      font-family: 'Prompt';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Prompt Regular'), local('Prompt-Regular'), url('/fonts/Prompt-Regular.ttf') format('truetype');;
+  }
 
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    overflow: hidden;
-}
+  @font-face {
+      font-family: 'Prompt';
+      font-style: normal;
+      font-weight: 500;
+      src: local('Prompt Medium'), local('Prompt-Medium'), url('/fonts/Prompt-Medium.ttf') format('truetype');;
+  }
 
-nav {
-    display: flex;
-    padding: 0 4rem;
-    height: 56pt;
-    justify-content: space-between;
-    align-items: center;
-}
+  @font-face {
+      font-family: 'Prompt';
+      font-style: normal;
+      font-weight: 600;
+      src: local('Prompt SemiBold'), local('Prompt-SemiBold'), url('/fonts/Prompt-SemiBold.ttf') format('truetype');;
+  }
 
-section {
-    padding: 0 4rem;
-}
+  @font-face {
+      font-family: 'Prompt';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Prompt Bold'), local('Prompt-Bold'), url('/fonts/Prompt-Bold.ttf') format('truetype');;
+  }
 
-footer {
-    display: flex;
-    padding: 8pt 4rem;
-    border-top: 1px solid rgb(182, 182, 182);
-    justify-content: space-between;
-    align-items: center;
-}
 
-nav > h1 {
-    font-family: 'Prompt';
-    font-weight: 500;
-    font-size: 1.6rem;
-    color: white;
-}
 
-nav > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    stroke: black;
-    background-color: white;
-    font-family: 'Prompt';
-    font-size: 0.9rem;
-    font-weight: 500;
-    height: 34pt;
-    padding: 0 12pt;
-    border-radius: 8pt;
-    z-index: 1;
-}
+  * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: Prompt;
+  }
 
-nav > a:hover {
-    color: white;
-    stroke: white;
-    transition: 100ms;
-    background-color: black;
-    border: 1.2pt solid white;
-}
+  body {
+      background-color: black;
+  }
 
-nav > a > svg {
-    height: 14pt;
-    width: 14pt;
-    stroke-width: 1.7pt;
-    margin-right: 5pt;
-    stroke: inherit;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
+  canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      overflow: hidden;
+  }
 
-#main-section {
-    padding-top: 65pt;
-    display: flex;
-    justify-content: space-between;
-}
+  nav {
+      display: flex;
+      padding: 0 4rem;
+      height: 56pt;
+      justify-content: space-between;
+      align-items: center;
+  }
 
-#main-section > div{
-    margin-right: 5rem;
-}
+  section {
+      padding: 0 4rem;
+  }
 
-#main-section > div > p {
-    font-family: 'Prompt';
-    color: lightgrey;
-    font-weight: 400;
-    font-size: 1rem;
-}
+  footer {
+      display: flex;
+      padding: 8pt 4rem;
+      border-top: 1px solid rgb(182, 182, 182);
+      justify-content: space-between;
+      align-items: center;
+  }
 
-#main-section > div > h4 {
-    font-family: 'Prompt';
-    color: white;
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-top: 120pt;
-    text-transform: uppercase;
-    line-height: 2.8rem;
-    margin-bottom: 10pt;
-}
+  /* Konstantin */
 
-#main-section > div > a {
-    position: absolute;
-    text-decoration: none;
-    color: lightgrey;
-    font-family: 'Prompt';
-    font-size: 1.1rem;
-    font-weight: 400;
-    border-bottom: 2.5pt solid white;
-    padding: 4pt 3pt 4pt 0;
-    cursor: pointer;
-    z-index: 1;
-}
+  nav>h1 {
+      font-family: 'Prompt';
+      font-weight: 500;
+      font-size: 1.6rem;
+      color: white;
+  }
 
-#main-section > div > a:hover {
-    color: white;
-    transition: 100ms;
-    border-bottom: 5pt solid white;
-}
+  @media only screen and (max-width: 1200px) {
+      nav>h1 {
+          font-size: 1.4rem;
+      }
+  }
 
-#main-section > img {
-    height: 560px;
-}
 
-#main-section > img:hover {
-    transform: translateX(-10pt) scale(1.03) rotate(-3deg);
-    transition: 200ms;
-}
+  nav>a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+      stroke: black;
+      background-color: white;
+      font-family: 'Prompt';
+      font-size: 0.9rem;
+      font-weight: 500;
+      height: 34pt;
+      padding: 0 12pt;
+      border-radius: 8pt;
+      z-index: 1;
+  }
 
-#social-section {
-    margin-top: 25pt;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
+  nav>a:hover {
+      color: white;
+      stroke: white;
+      transition: 100ms;
+      background-color: black;
+      border: 1.2pt solid white;
+  }
 
-#social-section > h2 {
-    padding: 0;
-    margin: 0;
-    line-height: 9rem;
-    font-family: 'Prompt';
-    color: white;
-    font-size: 9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    transform: scaleY(0.6);
-    -webkit-transform: scaleY(0.6);
-}
+  nav>a>svg {
+      height: 14pt;
+      width: 14pt;
+      stroke-width: 1.7pt;
+      margin-right: 5pt;
+      stroke: inherit;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+  }
 
-#social-section > h2:nth-child(2) {
-    color: transparent;
-    -webkit-text-stroke: 2pt white;
-    align-self: flex-end;
-    margin-top: -1.9rem;
-}
+  #main-section {
+      padding-top: 65pt;
+      display: flex;
+      justify-content: space-between;
+  }
 
-#card-grid {
-    margin: 50pt 0;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20pt;
-}
+  #main-section>div {
+      margin-right: 5rem;
+  }
 
-.card {
-    padding: 20pt 15pt;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 12pt;
-    background-color: #222225;
-    border: 1.7pt solid rgb(53, 52, 52);
-    text-decoration: none;
-    cursor: pointer;
-    z-index: 1;
-}
+  /* current */
 
-.card.appear:hover {
-    transform: translateY(-5pt) scale(1.01);
-    transition: 100ms;
-}
+  #main-section>div>p {
+      font-family: 'Prompt';
+      color: lightgrey;
+      font-weight: 400;
+      font-size: 1rem;
+  }
 
-.card > div > h5 {
-    font-family: 'Prompt';
-    color: white;
-    font-size: 1.4rem;
-    font-weight: 500;
-}
+  @media only screen and (max-width: 1200px) {
+      #main-section>div>p {
+          font-size: 0.9rem;
+      }
+  }
 
-.card > div > p {
-    font-family: 'Prompt';
-    color: lightgrey;
-    font-size: 0.9rem;
-    font-weight: 400;
-}
+  /* we */
 
-.social-icon {
-    height: 24pt;
-    width: 24pt;
-    margin-left: 20pt;
-}
+  #main-section>div>h4 {
+      font-family: 'Prompt';
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-top: 120pt;
+      text-transform: uppercase;
+      line-height: 2.8rem;
+      margin-bottom: 10pt;
+  }
 
-#github-icon {
-    stroke-width: 1pt;
-    stroke: grey;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    
-}
+  @media only screen and (max-width: 1200px) {
+      #main-section>div>h4 {
+          font-size: 1.2rem;
+      }
+  }
 
-#linkedin-icon {
-    stroke-width: 1pt;
-    stroke: grey;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
+  #main-section>div>a {
+      position: absolute;
+      text-decoration: none;
+      color: lightgrey;
+      font-family: 'Prompt';
+      font-size: 1.1rem;
+      font-weight: 400;
+      border-bottom: 2.5pt solid white;
+      padding: 4pt 3pt 4pt 0;
+      cursor: pointer;
+      z-index: 1;
+  }
 
-#tiktok-icon {
-    stroke-width: 1.1pt;
-    stroke: none;
-    fill: grey; 
-}
+  #main-section>div>a:hover {
+      color: white;
+      transition: 100ms;
+      border-bottom: 5pt solid white;
+  }
 
-#bio-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.8;
-    margin: 3rem 0 5rem;
-}
+  #main-section>img {
+      height: 560px;
+  }
 
-#bio-section > p {
-    font-family: 'Prompt';
-    color: white;
-    font-weight: 300;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-}
+  @media only screen and (max-width: 1200px) {
+      #main-section>img {
+          height: 400px;
+      }
+  }
 
-footer > p {
-    font-family: 'Prompt';
-    color: lightgrey;
-    font-weight: 300;
-    font-size: 0.9rem;
-}
+  #main-section>img:hover {
+      transform: translateX(-10pt) scale(1.03) rotate(-3deg);
+      transition: 200ms;
+  }
 
-footer > button {
-    background-color: transparent;
-    border: none;
-    font-family: 'Prompt';
-    color: lightgrey;
-    font-weight: 400;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    z-index: 1;
-}
+  #social-section {
+      margin-top: 25pt;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
 
-/* animations */
+  #social-section>h2 {
+      padding: 0;
+      margin: 0;
+      line-height: 9rem;
+      font-family: 'Prompt';
+      color: white;
+      font-size: 9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      transform: scaleY(0.6);
+      -webkit-transform: scaleY(0.6);
+  }
 
-.fade-in {
-    opacity: 0;
-    transition: opacity 250ms ease-in;
-}
-  
-.fade-in.appear {
-    opacity: 1;
-}
-  
-.slide-in-bottom {
-    transform: translateY(20%);
-    opacity: 0;
-    transition: opacity 250ms ease-in, transform 400ms ease-in;
-}
-  
-.slide-in-bottom.appear {
-    transform: translateY(0);
-    opacity: 1;
-}
-  
-.slide-in-left {
-    transform: translateX(-10%);
-    opacity: 0;
-    transition: opacity 250ms ease-in, transform 400ms ease-in;
-}
-  
-.slide-in-right {
-    transform: translateX(10%);
-    opacity: 0;
-    transition: opacity 250ms ease-in, transform 400ms ease-in;
-}
-  
-.slide-in-right.appear,
-.slide-in-left.appear {
-    transform: translateX(0);
-    opacity: 1;
-}
+  #social-section>h2:nth-child(2) {
+      color: transparent;
+      -webkit-text-stroke: 2pt white;
+      align-self: flex-end;
+      margin-top: -1.9rem;
+  }
+
+  #card-grid {
+      margin: 50pt 0;
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20pt;
+  }
+
+  .card {
+      padding: 20pt 15pt;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 12pt;
+      background-color: #222225;
+      border: 1.7pt solid rgb(53, 52, 52);
+      text-decoration: none;
+      cursor: pointer;
+      z-index: 1;
+  }
+
+  .card.appear:hover {
+      transform: translateY(-5pt) scale(1.01);
+      transition: 100ms;
+  }
+
+  .card>div>h5 {
+      font-family: 'Prompt';
+      color: white;
+      font-size: 1.4rem;
+      font-weight: 500;
+  }
+
+  .card>div>p {
+      font-family: 'Prompt';
+      color: lightgrey;
+      font-size: 0.9rem;
+      font-weight: 400;
+  }
+
+  .social-icon {
+      height: 24pt;
+      width: 24pt;
+      margin-left: 20pt;
+  }
+
+  #github-icon {
+      stroke-width: 1pt;
+      stroke: grey;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+
+  }
+
+  #linkedin-icon {
+      stroke-width: 1pt;
+      stroke: grey;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+  }
+
+  #tiktok-icon {
+      stroke-width: 1.1pt;
+      stroke: none;
+      fill: grey;
+  }
+
+  #bio-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.8;
+      margin: 3rem 0 5rem;
+  }
+
+  #bio-section>p {
+      font-family: 'Prompt';
+      color: white;
+      font-weight: 300;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+  }
+
+  footer>p {
+      font-family: 'Prompt';
+      color: lightgrey;
+      font-weight: 300;
+      font-size: 0.9rem;
+  }
+
+  footer>button {
+      background-color: transparent;
+      border: none;
+      font-family: 'Prompt';
+      color: lightgrey;
+      font-weight: 400;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      z-index: 1;
+  }
+
+  /* animations */
+
+  .fade-in {
+      opacity: 0;
+      transition: opacity 250ms ease-in;
+  }
+
+  .fade-in.appear {
+      opacity: 1;
+  }
+
+  .slide-in-bottom {
+      transform: translateY(20%);
+      opacity: 0;
+      transition: opacity 250ms ease-in, transform 400ms ease-in;
+  }
+
+  .slide-in-bottom.appear {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+  .slide-in-left {
+      transform: translateX(-10%);
+      opacity: 0;
+      transition: opacity 250ms ease-in, transform 400ms ease-in;
+  }
+
+  .slide-in-right {
+      transform: translateX(10%);
+      opacity: 0;
+      transition: opacity 250ms ease-in, transform 400ms ease-in;
+  }
+
+  .slide-in-right.appear,
+  .slide-in-left.appear {
+      transform: translateX(0);
+      opacity: 1;
+  }
