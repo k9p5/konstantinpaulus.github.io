@@ -1,0 +1,226 @@
+@media only screen and (min-width: 1500px) {
+  #root {
+    border-left: 1px solid rgb(182, 182, 182);
+    border-right: 1px solid rgb(182, 182, 182);
+  }
+  nav {
+    padding: 0 8rem;
+  }
+
+  section {
+    padding: 0 8rem;
+  }
+
+  footer {
+    padding: 8pt 8rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  nav > h1 {
+    font-size: 1.4rem;
+  }
+  nav > a {
+    font-size: 0.8rem;
+    height: 32pt;
+    padding: 0 10pt;
+  }
+  nav > a > svg {
+    height: 13pt;
+    width: 13pt;
+  }
+  #main-section > div > p {
+    font-size: 0.9rem;
+  }
+  #main-section > div > h4 {
+    font-size: 1.4rem;
+    margin-top: 105pt;
+    line-height: 2.5rem;
+    margin-bottom: 8pt;
+  }
+  #main-section > img {
+    height: 450px;
+  }
+  #main-section > div > a {
+    font-size: 1rem;
+  }
+  #main-section > div {
+    margin-right: 3rem;
+  }
+  #social-section > h2 {
+    line-height: 7.5rem;
+    font-size: 7.5rem;
+  }
+  .card > div > h5 {
+    font-size: 1.2rem;
+  }
+  .card > div > p {
+    font-size: 0.9rem;
+  }
+  #bio-section > p {
+    font-size: 1.1rem;
+  }
+  footer > p {
+    font-size: 0.9rem;
+  }
+  footer > button {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  nav > h1 {
+    font-size: 1.2rem;
+  }
+  nav > a {
+    font-size: 0.8rem;
+    height: 30pt;
+    padding: 0 10pt;
+  }
+  nav > a > svg {
+    height: 13pt;
+    width: 13pt;
+  }
+  #main-section > div > p {
+    font-size: 0.9rem;
+  }
+  #main-section > div > h4 {
+    font-size: 1.15rem;
+    margin-top: 90pt;
+    line-height: 2.4rem;
+    margin-bottom: 8pt;
+  }
+  #main-section > img {
+    height: 370px;
+  }
+  #main-section > div > a {
+    font-size: 0.9rem;
+  }
+  #social-section > h2 {
+    line-height: 6rem;
+    font-size: 6rem;
+  }
+  #card-grid {
+    grid-template-columns: 1fr;
+    row-gap: 20pt;
+  }
+  .card > div > h5 {
+    font-size: 1.1rem;
+  }
+  .card > div > p {
+    font-size: 0.8rem;
+  }
+  #bio-section > p {
+    font-size: 1rem;
+  }
+  footer > p {
+    font-size: 0.8rem;
+  }
+  footer > button {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  nav {
+    padding: 0 2rem;
+  }
+
+  section {
+    padding: 0 2rem;
+  }
+
+  footer {
+    padding: 8pt 2rem;
+  }
+  #main-section > div > h4 {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  nav > a {
+    height: 28pt;
+  }
+  #main-section {
+    padding-top: 15pt;
+  }
+  #main-section > img {
+    margin-top: 130pt;
+    height: 350px;
+  }
+  #main-section > div > h4 {
+    margin-top: 110pt;
+  }
+  #main-section > div {
+    margin-right: 0.5rem;
+  }
+  #social-section > h2 {
+    line-height: 4.8rem;
+    font-size: 4.8rem;
+  }
+  #card-grid {
+    grid-template-columns: 1fr;
+    row-gap: 20pt;
+  }
+  .card {
+    padding: 15pt 12pt;
+  }
+  #bio-section {
+    margin: 1rem 0 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  #main-section > div > h4 {
+    margin-top: 160pt;
+  }
+  #main-section > div {
+    margin-right: 1.5rem;
+  }
+  #main-section > img {
+    margin-top: 115pt;
+  }
+  #social-section > h2 {
+    line-height: 4.5rem;
+    font-size: 11.1vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav > a {
+    padding: 0 9pt;
+  }
+  nav > h1 {
+    font-size: 1.1rem;
+  }
+  #main-section > div > p {
+    font-size: 0.8rem;
+  }
+  #main-section > div > h4 {
+    margin-top: 140pt;
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+  #main-section > div {
+    margin-right: 15pt;
+  }
+  #main-section > img {
+    margin-top: 100pt;
+    height: 300px;
+  }
+  #social-section > h2 {
+    line-height: 4.3rem;
+    font-size: 11.1vw;
+  }
+  #social-section {
+    margin-top: 10pt;
+  }
+  #card-grid {
+    margin: 25pt 0;
+  }
+  .card {
+    padding: 12pt 12pt;
+  }
+}
